@@ -1,0 +1,98 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 19 de ago. de 2024, 09:32:55
+    Author     : erick.gsantos7
+*/
+
+
+*, 
+*:after,
+*:before {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 5vh;
+    background-color: red;
+}
+
+div.slogan{
+    flex: 25%;
+    background-color: grey;
+}
+
+div.logo{
+    flex:25%;
+    background-color: green
+}
+
+div.slogan2{
+    flex:25%;
+    background-color: blue;
+}
+
+div.logo2{
+    flex:25%;
+    background-color: violet;
+}
+
+nav{  
+   
+    width: 100vw;
+    height: 5vh;
+    border-color: blue;
+    border: 5px 5px;
+    border-style: dotted;
+   
+ 
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around; /* Divide o espaço igualmente */
+  align-items: center; /* Centraliza verticalmente */
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  flex: 1; /* Faz com que cada item ocupe o mesmo espaço */
+
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #000; /* Cor do texto */
+  display: block;
+  padding: 10px 20px; /* Espaçamento interno dos links */
+}
+.nav-links a:hover{
+    opacity: 40%;
+    background-color: grey;
+}
+
+main{
+    width: 100vw;
+    height: 80vh;
+    background-color:tomato;
+    
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color:blueviolet;
+}
+
