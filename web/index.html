@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
 <html>
     <head>
         <title>Titulo do site</title>
@@ -15,24 +11,34 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
     <body>
         <header>
+
             <div class="logo">
-                <p>LOGO</p>
+                <img src="imagens/umbrella-logo.png" alt="Resident evil Logo" width="50px" height="50px"/>
+                <p>Umbrella Corporation</p>
             </div>
-            <div class="slogan">
-                <p>SLOGAN</p>
+
+            <div class="login">
+                <form name="login" action="#" method="POST">
+
+                    <label for="email">Email : </label>
+                    <input type="email" name="email-login" id="email">
+
+                     <br>
+
+                    <label id="password">Senha : </label>
+                    <input type="password" name="senha-login" id="senha" minlength="8">
+                    
+                    
+                    <input type="submit" name="submit-login" value="Submit">
+                </form>
             </div>
-            <div class="logo2">
-                <p>LOGO 2 </p>
-            </div>
-            <div class="slogan2">
-                <p>SLOGAN 2</p>
-            </div>
-            
-            
+
+
+
         </header>
-        
+
         <nav>
-           <div class="nav-links">
+            <div class="nav-links">
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre</a></li>
@@ -44,9 +50,41 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </nav>
         <main>
 
-            <div class="container">
-                <h1 style="justify-items: center">Conteudo principal</h1>
-            </div>
+
+            <h1 >Conteudo principal</h1>
+
+
+
+            <p>
+                <button onclick="location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Não clique</button>
+            </p>
+
+            <p>
+                <iframe width="460" height="315" src="https://www.youtube.com/embed/uUlqploNGdc?si=877OvUJYmQ_VNgPW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
+
+
+            <form action="/" methor="POST" class="form">
+
+                <label id="nome">Nome :</label>
+                <input type="text" name="nome" id="nome">
+
+                <br>
+
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email">
+
+                <br>
+
+                <label id="password">Senha : </label>
+                <input type="password" name="senha" id="senha" minlength="8">
+
+                <br>
+
+                <input type="submit" name="submit" value="Submit">
+
+            </form>
+
 
         </main> 
 

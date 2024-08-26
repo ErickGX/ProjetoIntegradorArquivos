@@ -1,83 +1,74 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
-*/
-/* 
-    Created on : 19 de ago. de 2024, 09:32:55
-    Author     : erick.gsantos7
-*/
-
-
-*, 
+*,
 *:after,
 *:before {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+
 body{
     font-size: 100%;
     list-style-type: none;
 }
 
 header{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
+    display: flex; /* */
+    flex-direction: row; /*COLOCA OS ELEMENTOS EM LINHA */
+    width: 100vw;  /*Define a altura */
     height: 5vh;
     background-color: red;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
 }
 
-div.slogan{
-    flex: 25%;
-    background-color: grey;
-}
+
 
 div.logo{
-    flex:25%;
-    background-color: green
+    flex:50%;
+    width: 100%;
+    text-align: center;
+
+
 }
 
-div.slogan2{
-    flex:25%;
-    background-color: blue;
+div.login{
+    flex:50%;
+    background-color: #4361ee;
 }
 
-div.logo2{
-    flex:25%;
-    background-color: violet;
-}
 
-nav{  
-   
+nav{
+
     width: 100vw;
     height: 5vh;
     border-color: blue;
     border: 5px 5px;
     border-style: dotted;
-   
- 
+    background-color: #4cc9f0;
+
+
 }
 .nav-links {
-  display: flex;
-  justify-content: space-around; /* Divide o espaço igualmente */
-  align-items: center; /* Centraliza verticalmente */
-  list-style: none; /* Remove os marcadores da lista */
-  padding: 0;
-  margin: 0;
+    display: flex;
+    justify-content: space-around; /* Divide o espaço igualmente */
+    align-items: center; /* Centraliza verticalmente */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links li {
-  flex: 1; /* Faz com que cada item ocupe o mesmo espaço */
+    flex: 1; /* Faz com que cada item ocupe o mesmo espaço */
 
 }
 
 .nav-links a {
-  text-decoration: none; /* Remove o sublinhado dos links */
-  color: #000; /* Cor do texto */
-  display: block;
-  padding: 10px 20px; /* Espaçamento interno dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000; /* Cor do texto */
+    display: block;
+    padding: 10px 20px; /* Espaçamento interno dos links */
 }
 .nav-links a:hover{
     opacity: 40%;
@@ -85,14 +76,31 @@ nav{
 }
 
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: 80vh;
-    background-color:tomato;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    line-height: 3;
     
+}
+
+
+button{
+    background-color: red;
+    color:white;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size:10px;
+    border-bottom: 320px;
 }
 footer{
     width: 100vw;
     height: 10vh;
-    background-color:blueviolet;
+    background-color:#3f37c9;
 }
 
