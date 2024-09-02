@@ -16,11 +16,11 @@ header{
     display: flex; /* */
     flex-direction: row; /*COLOCA OS ELEMENTOS EM LINHA */
     width: 100vw;  /*Define a altura */
-    height: 5vh;
+    height: 8vh;
     background-color: red;
     color: white;
-    text-align: center;
     vertical-align: middle;
+    text-align: right;
 }
 
 
@@ -28,52 +28,81 @@ header{
 div.logo{
     flex:50%;
     width: 100%;
-    text-align: center;
-
-
+    text-align: left;
 }
+
 
 div.login{
     flex:50%;
-    background-color: #4361ee;
+    background-color: black;
 }
 
 
-nav{
+form{
+    background-color:whitesmoke;
+    justify-self: right;
+    padding-right: 20px;
 
+}
+
+form input{
+    background-color: aliceblue;
+    height: 25px;
+    margin: 0 auto;
+}
+form label{
+    font-size: 20px;
+    color: black;
+}
+
+input.botao{
+    border-radius: 10px;
+    padding: 5px 40px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+   
+}
+
+input.botao:hover{
+    background-color: blue;
+    color:white;
+}
+
+nav {
     width: 100vw;
     height: 5vh;
     border-color: blue;
-    border: 5px 5px;
+    border: 5px;
     border-style: dotted;
     background-color: #4cc9f0;
-
-
 }
+
 .nav-links {
     display: flex;
-    justify-content: space-around; /* Divide o espaço igualmente */
+    justify-content: space-between; /* Ajuste para distribuir o espaço igualmente */
     align-items: center; /* Centraliza verticalmente */
     list-style: none; /* Remove os marcadores da lista */
     padding: 0;
     margin: 0;
+    width: 100%; /* Garante que a lista ocupe toda a largura do nav */
 }
 
 .nav-links li {
     flex: 1; /* Faz com que cada item ocupe o mesmo espaço */
-
+    text-align: center; /* Centraliza o texto dos itens */
 }
 
 .nav-links a {
     text-decoration: none; /* Remove o sublinhado dos links */
     color: #000; /* Cor do texto */
-    display: block;
+    display: block; /* Garante que o link ocupe todo o espaço do li */
     padding: 10px 20px; /* Espaçamento interno dos links */
 }
-.nav-links a:hover{
+
+.nav-links a:hover {
     opacity: 40%;
     background-color: grey;
 }
+
 
 main{
     display: flex;
@@ -100,7 +129,7 @@ button{
 }
 footer{
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
     background-color:#3f37c9;
 }
 

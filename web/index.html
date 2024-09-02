@@ -13,23 +13,23 @@
         <header>
 
             <div class="logo">
-                <img src="imagens/umbrella-logo.png" alt="Resident evil Logo" width="50px" height="50px"/>
-                <p>Umbrella Corporation</p>
+                
             </div>
-
+           
             <div class="login">
-                <form name="login" action="#" method="POST">
+                <form name="login" action="validar.jsp" method="POST">
 
-                    <label for="email">Email : </label>
-                    <input type="email" name="email-login" id="email">
+                    <label for="email">Usuário : </label>
+                    <input type="text" name="user" id="email">
 
                      <br>
 
                     <label id="password">Senha : </label>
-                    <input type="password" name="senha-login" id="senha" minlength="8">
+                    <input type="password" name="senha" id="senha" minlength="8">
+                    <br>
                     
                     
-                    <input type="submit" name="submit-login" value="Submit">
+                    <input type="submit" name="submit" value="submit" class="botao">
                 </form>
             </div>
 
@@ -40,9 +40,11 @@
         <nav>
             <div class="nav-links">
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#home">Sobre-nos</a></li>
+                    <li><a href="#about">Sobre-ELes</a></li>
                     <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato  </a></li>
+                    <li><a href="#contact">Contato</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </div>
@@ -53,37 +55,11 @@
 
             <h1 >Conteudo principal</h1>
 
+<div class="sun"></div>
+<div class="overlay"></div>
+<div class="overlay glitch"></div>
 
-
-            <p>
-                <button onclick="location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Não clique</button>
-            </p>
-
-            <p>
-                <iframe width="460" height="315" src="https://www.youtube.com/embed/uUlqploNGdc?si=877OvUJYmQ_VNgPW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </p>
-
-
-            <form action="/" methor="POST" class="form">
-
-                <label id="nome">Nome :</label>
-                <input type="text" name="nome" id="nome">
-
-                <br>
-
-                <label for="email">Email : </label>
-                <input type="email" name="email" id="email">
-
-                <br>
-
-                <label id="password">Senha : </label>
-                <input type="password" name="senha" id="senha" minlength="8">
-
-                <br>
-
-                <input type="submit" name="submit" value="Submit">
-
-            </form>
+          
 
 
         </main> 
