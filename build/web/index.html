@@ -4,7 +4,9 @@
         <title>Titulo do site</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/navbar.css"/>
+
 
     </head>
 
@@ -13,22 +15,22 @@
         <header>
 
             <div class="logo">
-                
+
             </div>
-           
+
             <div class="login">
                 <form name="login" action="validar.jsp" method="POST">
 
                     <label for="email">Usuário : </label>
                     <input type="text" name="user" id="email">
 
-                     <br>
+                    <br>
 
                     <label id="password">Senha : </label>
                     <input type="password" name="senha" id="senha" minlength="8">
                     <br>
-                    
-                    
+
+
                     <input type="submit" name="submit" value="submit" class="botao">
                 </form>
             </div>
@@ -40,12 +42,10 @@
         <nav>
             <div class="nav-links">
                 <ul class="nav-links">
-                    <li><a href="#home">Sobre-nos</a></li>
-                    <li><a href="#about">Sobre-ELes</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#contact">Contato  </a></li>
-                    <li><a href="#contact">Contato</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="cadpro.html" target="centro">Cadastro de Produtos</a></li>
+                    <li><a href="#about" target="centro">Listagem de produtos</a></li>
+                    <li><a href="#gallery" target="centro">Excluir Produtos</a></li>
+                    <li><a href="#contact" target="centro">Alterar Produtos</a></li>
                 </ul>
             </div>
 
@@ -53,13 +53,9 @@
         <main>
 
 
-            <h1 >Conteudo principal</h1>
+            <iframe src="cadpro.html" frameborder="0" name="centro"></iframe>
 
-<div class="sun"></div>
-<div class="overlay"></div>
-<div class="overlay glitch"></div>
 
-          
 
 
         </main> 
