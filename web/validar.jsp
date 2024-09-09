@@ -1,9 +1,6 @@
-<%
-    // Recebe os valores dos campos do formulário
-    String user = request.getParameter("user");
-    String senha = request.getParameter("senha");
-%>
-
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.DriverManager"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -13,14 +10,31 @@
         <title></title>
     </head>
     <body>
-        <%
-            //Exibe os valores recebidos
-            if (user != null && senha != null) {
-                out.println("Usuário: " + user + "<br>");
-                out.println("Senha: " + senha + "<br>");
-            } else {
-                System.out.println("Dados Recebidos");
+        <%   // Recebe os valores dos campos do formulário
+            try {
+
+                String user, password;
+
+                user = request.getParameter("user");
+                password = request.getParameter("password");
+
+                Connection conexao;
+                PreparedStatement PS;
+                Class.forName("com.mysql.cj.jdbc.Driver");
+
+                conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco", "root", "");
+
+                //Faz o select no banco de dados
+                PS = conexao.prepareStatement("SELECT * FROM users WHERE username = ? AND password = ?");
+                PS.setString(1, user);
+                PS.setString(2, password);
+                PS.executeQuery();
+                out.print("Concluido usuario encontrado");
+
+            } catch (Exception e) {
+                out.print("Falha na consulta no banco de dados" + e.getMessage());
             }
+
         %>
 
     </body>
