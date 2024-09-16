@@ -1,73 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Titulo do site</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/navbar.css"/>
+
+<head>
+    <title>Titulo do site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
 
 
-    </head>
+</head>
 
 
-    <body>
-        <header>
+<body>
+    <header>
 
-            <div class="logo">
+        <div class="logo">
 
-            </div>
+        </div>
 
-            <div class="login">
-                <form name="login" action="validar.jsp" method="POST">
-
-                    <label for="email">Usuário : </label>
-                    <input type="text" name="user" id="email">
-
-                    <br>
-
-                    <label id="password">Senha : </label>
-                    <input type="password" name="password" id="senha" minlength="8">
-                    <br>
+        <div class="cadastro">
 
 
-                    <input type="submit" name="submit" value="submit" class="botao">
-                </form>
-            </div>
+            <p>Não está cadastrado ? </p>
+            <a id="linkcad" href="cadastro.html" target="centro">cadastre-se</a>      
+
+        </div>
+
+        
+        <div class="login">
+
+            <form name="login" action="validar.jsp" method="POST">
+
+                <label for="email">Usuário : </label>
+                <input type="text" name="user" id="email">
+
+                <br>
+
+                <label id="password">Senha : </label>
+                <input type="password" name="password" id="senha" minlength="8">
+                <br>
 
 
-
-        </header>
-
-        <nav>
-            <div class="nav-links">
-                <ul class="nav-links">
-                    <li><a href="cadpro.html" target="centro">Cadastro de Produtos</a></li>
-                    <li><a href="#about" target="centro">Listagem de produtos</a></li>
-                    <li><a href="#gallery" target="centro">Excluir Produtos</a></li>
-                    <li><a href="#contact" target="centro">Alterar Produtos</a></li>
-                </ul>
-            </div>
-
-        </nav>
-        <main>
+                <input type="submit" name="submit" value="submit" class="botao">
+            </form>
 
 
-            <iframe src="cadpro.html" frameborder="0" name="centro"></iframe>
+          
+        </div>
 
 
 
+    </header>
 
-        </main> 
+    <nav>
+        <div class="nav-links">
+            <ul class="nav-links">
+                <li><a href="cadpro.html" target="centro">Cadastro de Produtos</a></li>
+                <li><a href="#about" target="centro">Listagem de produtos</a></li>
+                <li><a href="#gallery" target="centro">Excluir Produtos</a></li>
+                <li><a href="#contact" target="centro">Alterar Produtos</a></li>
+            </ul>
+        </div>
 
-        <footer>
+    </nav>
+    <main>
 
-            <div class="footer">
-                <p>Footer</p>
-            </div>
 
-        </footer>
+        <iframe src="cadpro.html" frameborder="0" name="centro"></iframe>
 
-    </body>
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+
+    </footer>
+
+</body>
 
 </html>

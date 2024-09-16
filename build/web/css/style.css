@@ -17,24 +17,33 @@ header{
     display: flex; /* */
     flex-direction: row; /*COLOCA OS ELEMENTOS EM LINHA */
     width: 100vw;  /*Define a altura */
-    background-color: red;
     color: white;
-    vertical-align: middle;
-    text-align: right;
+    text-align: center;
+    align-items: center;
 }
 
 
 div.logo{
     flex:50%;
     width: 100%;
-    text-align: left;
 }
 
+div.cadastro{
+    flex:25%;
+    background-color: black;
+
+}
 
 div.login{
-    flex:50%;
+    flex:25%;
     background-color: black;
 }
+
+#linkcad{
+
+        color: yellow;
+}
+
 
 
 form{

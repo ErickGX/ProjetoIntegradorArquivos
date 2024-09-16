@@ -1,7 +1,7 @@
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
-
+<%@page import="java.sql.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -21,15 +21,21 @@
                 Connection conexao;
                 PreparedStatement PS;
                 Class.forName("com.mysql.cj.jdbc.Driver");
+         
 
                 conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco", "root", "");
-
+                
                 //Faz o select no banco de dados
                 PS = conexao.prepareStatement("SELECT * FROM users WHERE username = ? AND password = ?");
                 PS.setString(1, user);
                 PS.setString(2, password);
-                PS.executeQuery();
-                out.print("Concluido usuario encontrado");
+                ResultSet resultado = PS.executeQuery();
+                        
+                if(resultado.next()){
+               response.sendRedirect("loginsucess.html");
+                 }else{
+                    response.sendRedirect("errorlogin.html");
+                    }
 
             } catch (Exception e) {
                 out.print("Falha na consulta no banco de dados" + e.getMessage());
