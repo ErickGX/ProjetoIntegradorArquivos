@@ -1,6 +1,8 @@
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.*"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,7 +15,7 @@
             
             //dados recebidos do formulario
             int codigo;
-            String nome, marca;
+            String nome, marca, fabricacao;
             double preco;
             
             
@@ -22,6 +24,8 @@
             nome =  request.getParameter("nome");
             marca = request.getParameter("marca");
             preco = Double.parseDouble(request.getParameter("preco"));
+            fabricacao   = request.getParameter("datafab");    
+            
             
 
                 //System.out.println("Codigo : "+ codigo + "  Nome : "+nome +" marca : " +marca + "preco :" +preco);
@@ -35,11 +39,12 @@
             conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco", "root", "");
             
             //Inserir dados no banco de dados
-            PS = conexao.prepareStatement("INSERT INTO produtos VALUES(?,?,?,?)");
+            PS = conexao.prepareStatement("INSERT INTO produtos VALUES(?,?,?,?,?)");
             PS.setInt(1, codigo);
             PS.setString(2, nome);
             PS.setString(3, marca);
             PS.setDouble(4, preco);
+            PS.setString(5, fabricacao);
             PS.executeUpdate();
             out.print("Produto Inserido com Sucesso");
             

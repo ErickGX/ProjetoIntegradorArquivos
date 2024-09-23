@@ -6,6 +6,11 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+html{
+    position: relative;
+    min-height: 100%;
+}
 body {
     margin: 0;
     padding: 0;
@@ -39,6 +44,14 @@ div.login{
     background-color: black;
 }
 
+div.saudacao{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 40px;
+    
+}
+
 #linkcad{
 
         color: yellow;
@@ -50,6 +63,7 @@ form{
     background-color:whitesmoke;
     justify-self: right;
     padding-right: 20px;
+    margin: 0 auto;
 
 }
 
@@ -98,13 +112,26 @@ button{
 }
 
 iframe{
-    width: 100vw;
-    height: 80vh;
+    width: 40vw;
+    height: 30vh;
     line-height: 3;
 }
+
+#iframeRest{
+    margin-top: 100px ;
+    border: 5px solid black;
+    width: 80%vw;
+    height: 70%vh;
+
+}
+
 footer{
-    width: 100vw;
-    height: 7vh;
-    background-color:#3f37c9;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
 }
 

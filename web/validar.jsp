@@ -32,7 +32,7 @@
                 ResultSet resultado = PS.executeQuery();
                         
                 if(resultado.next()){
-               response.sendRedirect("loginsucess.html");
+               response.sendRedirect("restrito.jsp?username=" + resultado.getString("username"));
                  }else{
                     response.sendRedirect("errorlogin.html");
                     }
