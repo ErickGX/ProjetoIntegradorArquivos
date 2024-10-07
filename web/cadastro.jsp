@@ -8,10 +8,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/navbar.css" />
         <title>JSP Page</title>
     </head>
     <body>
-        <%   // Recebe os valores dos campos do formulário
+        <%   // Recebe os valores dos campos do formulï¿½rio
             try {
 
                 String user, password;
@@ -40,7 +41,7 @@
                 
 
             } catch (Exception e) {
-                out.print("Falha na inserção do usuario no banco de dados" + e.getMessage());
+                out.print("Falha na inserï¿½ï¿½o do usuario no banco de dados" + e.getMessage());
             }
 
         %>

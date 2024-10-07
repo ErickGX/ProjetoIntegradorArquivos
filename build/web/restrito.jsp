@@ -32,12 +32,11 @@
     <nav>
         <div class="nav-links">
             <ul class="nav-links">
-                <li><a href="cadpro.html"target="centro">Cadastro</a></li>
-                <li><a href="#about">Listagem</a></li>
-                <li><a href="#gallery">Excluir </a></li>
-                <li><a href="#contact">Alterar </a></li>
-                <li><a href="#contact">Consultar</a></li>
-                <li><a href="#contact">Alterar Senha</a></li>
+                <li><a href="cadpro.html" target="centro">Cadastro</a></li>
+                <li><a href="listarpro.jsp" target="centro" >Listagem</a></li>
+                <li><a href="#gallery" target="centro">Excluir </a></li>
+                <li><a href="alterar.html" target="centro">Alterar </a></li>
+                <li><a href="carregarpro.html" target="centro">Consultar</a></li>
             </ul>
         </div>
 
@@ -46,7 +45,7 @@
 
         
 
-        <iframe id="iframeRest" frameborder="0s" name="centro" default="nome"></iframe>
+        <iframe src="cadpro.html" id="iframeRest" frameborder="0s" name="centro" default="nome"></iframe>
 
 
 
