@@ -31,3 +31,4 @@
 
 -- ALTER TABLE produtos CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 -- ALTER TABLE users CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+--Lembrar de mudar string de conexao do Bando de dados porta e senha
