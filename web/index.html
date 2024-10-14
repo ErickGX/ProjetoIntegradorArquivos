@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Titulo do site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
+
+</head>
+
+
+<body>
+    <header>
+
+        <div class="logo">
+
+        </div>
+
+        <div class="cadastro">
+
+
+            <p>Não está cadastrado ? </p>
+            <a id="linkcad" href="cadastroUsuario.html" target="centro">cadastre-se</a>      
+
+        </div>
+
+        
+        <div class="login">
+
+            <form name="login" action="validar.jsp" method="POST">
+
+                <label for="email">Usuário : </label>
+                <input type="text" name="user" id="email" required>
+
+                <br>
+
+                <label id="password">Senha : </label>
+                <input type="password" name="password" id="senha" minlength="8" required>
+                <br>
+
+
+                <input type="submit" name="submit" value="submit" class="botao">
+            </form>
+
+
+          
+        </div>
+
+
+
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">Sobre nos</a></li>
+                <li><a href="#gallery">Entre em contato</a></li>
+                <li><a href="#contact">Desenvolvedor</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <main>
+
+
+        <iframe id="iframeRest" frameborder="0s" name="centro" default="nome"></iframe>
+
+
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

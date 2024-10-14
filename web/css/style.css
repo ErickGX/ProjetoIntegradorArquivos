@@ -1,0 +1,152 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    background: linear-gradient(to right, #ff6ad5, #c774e8, #ad8cff);
+}
+
+header{
+    display: flex; /* */
+    flex-direction: row; /*COLOCA OS ELEMENTOS EM LINHA */
+    width: 100vw;  /*Define a altura */
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+
+div.logo{
+    flex:50%;
+    width: 100%;
+}
+
+div.cadastro{
+    flex:25%;
+    background-color: black;
+
+}
+
+div.login{
+    flex:25%;
+    background-color: black;
+}
+
+div.saudacao{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 40px;
+    
+}
+
+
+#linkcad{
+
+        color: yellow;
+}
+
+
+form{
+    background-color:whitesmoke;
+    justify-self: right;
+    padding-right: 20px;
+    margin: 0 auto;
+
+}
+
+form input{
+    background-color: aliceblue;
+    height: 25px;
+    margin: 0 auto;
+}
+form label{
+    font-size: 20px;
+    color: black;
+}
+
+input.botao{
+    border-radius: 10px;
+    padding: 5px 40px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+
+}
+
+input.botao:hover{
+    background-color: blue;
+    color:white;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    line-height: 3;
+
+}
+
+
+button{
+    background-color: red;
+    color:white;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size:10px;
+    border-bottom: 320px;
+}
+
+iframe{
+    width: 40vw;
+    height: 30vh;
+    line-height: 3;
+}
+
+#iframeRest{
+    margin-top: 50px ;
+    border: 5px solid black;
+    height: 50vh;
+    width: 70vw;
+    overflow: scroll;
+
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th{
+    background-color: #f2f2f2;
+}
+
+footer{
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
